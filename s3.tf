@@ -22,7 +22,7 @@ resource "aws_s3_bucket_logging" "example" {
   target_bucket = module.s3_bucket.s3_bucket_id
   target_prefix = "log/"
 }
-resource "aws_s3_bucket_ventura_project" "example" {
+resource "aws_s3_bucket" "example" {
   bucket = module.s3_bucket.s3_bucket_id
 
   rule {
